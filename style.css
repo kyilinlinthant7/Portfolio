@@ -1,0 +1,51 @@
+@font-face {
+  font-family: mainfont;
+  src: url(font/Caviar-Dreams/CaviarDreams.ttf);
+}
+
+*{
+	font-family: mainfont;
+}
+
+.nav .nav-item .nav-link{
+	font-size: 1.2em;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    margin-top: 8%;
+}
+ 
+.inner{
+    overflow: hidden;
+}
+ 
+.inner img{
+    transition: all 1.5s ease;
+}
+ 
+.inner:hover img{
+    transform: scale(1.2);
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+a:link{ 
+    color: #000000; 
+    text-decoration: none;
+}
+
+

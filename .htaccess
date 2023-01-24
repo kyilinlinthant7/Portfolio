@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+RewriteRule ^.*-p(\d+)-.*/$ maintl/index\.php?id=$1&%{QUERY_STRING} [L]
+RewriteRule ^(.*)-b(\d+)/$ maintl/index\.php?cat=$1&%{QUERY_STRING} [L]
+
+</IfModule>
